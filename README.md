@@ -1,0 +1,1 @@
+# AzureStorageC2
