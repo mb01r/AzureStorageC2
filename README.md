@@ -1,1 +1,3 @@
 # AzureStorageC2
+
+#While looking through the ["Office 365 URLs and IP address ranges"](https://docs.microsoft.com/en-us/office365/enterprise/urls-and-ip-address-ranges) document I noticed that <b>*.blob.core.windows.net</b> was called out to be whitelisted. Typically whitelisting at a 4th level domain would be pretty secure. In this case the 5th level is controlled by the 'bad guy'. Even the most locked down environment is vulnerable to c2e using Azure Stroage accounts if the environment uses O365 products! The benefit of using this method for c2e gives the tacker; authentication, encryption in transit using a known good cert, encryption at rest, and 99.99% availablity.  
